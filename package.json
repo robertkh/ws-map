@@ -1,0 +1,29 @@
+{
+  "name": "exp-react",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "client": "cd client && set PORT=8000 && npm start",
+    "server": "nodemon ./bin/www",
+    "dev": "concurrently \"npm run server\"  \"npm run client\"",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "colors": "^1.4.0",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "~1.4.4",
+    "dotenv": "^10.0.0",
+    "express": "~4.16.1",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.13.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.12.7",
+    "nodemailer": "^6.7.2",
+    "tracer": "^1.1.5",
+    "websocket": "^1.0.34"
+  },
+  "type": "module"
+}
